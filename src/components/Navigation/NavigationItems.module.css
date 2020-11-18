@@ -1,0 +1,35 @@
+.Navbar {
+  background-color: #007bff;
+  padding: 0.4rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Navbar ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+.Navbar h2 {
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2.5em;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+.Navbar span {
+  color: #fbbc05;
+}
+
+@media only screen and (max-width: 600px) {
+  .Navbar,
+  ul {
+    display: block;
+    text-align: center;
+    padding: 7px;
+    margin: 0;
+  }
+}
