@@ -1,13 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import NavigationItems from "./components/Navigation/NavigationItems";
+import Home from "./pages/Home";
+import Details from './pages/Details';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Punk Beer Web App</h1>
-      </header>
-    </div>
+    <Router>
+      <NavigationItems />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/beer/:id" component={Details} />
+      </Switch>
+    </Router>
   );
 }
 
