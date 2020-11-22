@@ -1,5 +1,5 @@
 import Button from "@material-ui/core/Button";
-import classes from "./BeersCard.module.css";
+import classes from "./Beers.module.css";
 
 const BeersCard = (props) => {
   return (
@@ -10,6 +10,7 @@ const BeersCard = (props) => {
           <div className={classes.Description}>
             <h3>{props.title}</h3>
             <p>{props.description}</p>
+            <p>{props.brewersTip}</p>
             <Button size="small" color="primary">
               Share
             </Button>
