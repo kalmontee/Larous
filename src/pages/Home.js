@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import SearchInput from "../components/SearchInput/SearchInput";
-import BeersCard from "../components/Beers/BeersCard";
+import BeersCard from "../components/Beers/Beers";
 import axios from "axios";
 import Skeleton from "@material-ui/lab/Skeleton";
 
@@ -23,9 +23,7 @@ const Home = () => {
   useEffect(() => {
     axios
       .get(`https://api.punkapi.com/v2/beers`)
-      .then((res) => {
-        setBeers(res.data);
-      })
+      .then((res) => setBeers(res.data))
       .catch((err) => console.log(err)); // pop an alert for error
   }, []);
 
