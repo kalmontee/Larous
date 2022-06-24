@@ -1,5 +1,3 @@
-// import { useState } from "react";
-
 import classes from "./SearchInput.module.css";
 import { Button } from "@material-ui/core";
 
